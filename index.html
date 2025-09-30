@@ -6,67 +6,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Portfolio of Ahmed Ghlimi, software engineering student at 1337 School specializing in backend systems, real-time multiplayer applications, and secure web platforms."/>
   <title>Ahmed Ghlimi | Software Engineering Student & Full-Stack Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>Ahmed Ghlimi – Software Engineering Student & Full-Stack Developer</h1>
-    <p>Building secure web platforms and real-time multiplayer applications with modern technologies.</p>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+
+  <!-- Header -->
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Ahmed Ghlimi</h1>
+      <nav class="mt-4 sm:mt-0">
+        <ul class="flex space-x-6 text-gray-700 font-medium">
+          <li><a href="#about" class="hover:text-indigo-600">About</a></li>
+          <li><a href="#skills" class="hover:text-indigo-600">Skills</a></li>
+          <li><a href="#projects" class="hover:text-indigo-600">Projects</a></li>
+          <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am <strong>Ahmed Ghlimi</strong>, a <em>software engineering student at 1337 Coding School (42 Network)</em>. 
-    I specialize in <strong>backend development, real-time applications, and web security</strong>. My goal is to deliver practical, scalable, and secure software solutions.
-    I am available for internships starting <strong>September 2025</strong>.</p>
+  <!-- Hero Section -->
+
+  <section class="bg-indigo-600 text-white py-20">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h2 class="text-4xl font-extrabold mb-4">Software Engineering Student & Full-Stack Developer</h2>
+      <p class="text-lg">Specializing in backend systems, real-time applications, and secure web platforms.</p>
+    </div>
   </section>
 
-  <section id="skills">
-    <h2>Core Skills</h2>
-    <ul>
-      <li><strong>Programming:</strong> C, C++, JavaScript (ES6+), TypeScript, Python</li>
-      <li><strong>Frontend:</strong> React, Tailwind CSS, HTML5, CSS3</li>
-      <li><strong>Backend:</strong> Node.js (Express, Fastify), Django</li>
-      <li><strong>Databases:</strong> PostgreSQL, MySQL, MariaDB, SQLite, MongoDB</li>
-      <li><strong>DevOps & Infrastructure:</strong> Docker, Linux, Networking, CI/CD</li>
-      <li><strong>Security:</strong> JWT, OAuth 2.0, 2FA, Web Security (XSS, SQL Injection prevention, HTTPS)</li>
-      <li><strong>Other:</strong> REST APIs, WebSockets, Git, Agile Teamwork</li>
-    </ul>
+  <!-- About -->
+
+  <section id="about" class="max-w-4xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-indigo-600 mb-6">About Me</h2>
+    <p class="text-gray-700">I am <strong>Ahmed Ghlimi</strong>, a <em>software engineering student at 1337 Coding School (42 Network)</em>. 
+    I focus on <strong>backend development, real-time multiplayer applications, and web security</strong>. 
+    Passionate about solving complex problems and delivering secure, scalable solutions. 
+    Available for internships starting <strong>September 2025</strong>.</p>
   </section>
 
-  <section id="projects">
-    <h2>Highlighted Projects</h2>
-    <article>
-      <h3>Real-Time Multiplayer Web Game (Pong)</h3>
-      <p>Developed a <strong>real-time Pong game</strong> with <em>React, Fastify, and WebSockets</em>. 
-      Features include secure JWT/OAuth authentication, 2FA, matchmaking, AI opponent, and PostgreSQL integration for scores and match history.</p>
-    </article>
-    <article>
-      <h3>HTTP Server in C++98</h3>
-      <p>Implemented a custom <strong>HTTP/1.1 server</strong> supporting concurrent connections, static file serving, CGI execution, and session management.</p>
-    </article>
-    <article>
-      <h3>Modular Infrastructure with Docker</h3>
-      <p>Designed <strong>Dockerized infrastructure</strong> with NGINX, MariaDB, and WordPress. Automated builds, managed secrets, and configured Redis caching for performance.</p>
-    </article>
-    <article>
-      <h3>Django Platforms</h3>
-      <p>Built <strong>web platforms</strong> for room reservation and student integration with authentication, real-time chat, gamification, and PostgreSQL optimization.</p>
-    </article>
-    <article>
-      <h3>Minishell</h3>
-      <p>Developed a <strong>Unix-like shell</strong> in C, supporting pipes, redirections, process management, and environment variables.</p>
-    </article>
+  <!-- Skills -->
+
+  <section id="skills" class="bg-gray-100 py-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-indigo-600 mb-6">Core Skills</h2>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+        <li><strong>Programming:</strong> C, C++, JavaScript, TypeScript, Python</li>
+        <li><strong>Frontend:</strong> React, Tailwind CSS, HTML5, CSS3</li>
+        <li><strong>Backend:</strong> Node.js (Express, Fastify), Django</li>
+        <li><strong>Databases:</strong> PostgreSQL, MySQL, SQLite, MongoDB</li>
+        <li><strong>DevOps:</strong> Docker, Linux, CI/CD</li>
+        <li><strong>Security:</strong> JWT, OAuth 2.0, 2FA, Web Security</li>
+        <li><strong>Other:</strong> REST APIs, WebSockets, Git, Agile teamwork</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:ahmedghlimi123@gmail.com">ahmedghlimi123@gmail.com</a></p>
-    <p>Phone: <a href="tel:+212633676603">+212 633 676 603</a></p>
-    <p>Connect on <a href="https://www.linkedin.com/">LinkedIn</a> (Add your profile link).</p>
+  <!-- Projects -->
+
+  <section id="projects" class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-indigo-600 mb-8">Highlighted Projects</h2>
+    <div class="grid gap-8 md:grid-cols-2">
+      <article class="bg-white p-6 shadow rounded-lg">
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Real-Time Multiplayer Web Game</h3>
+        <p class="text-gray-700">Built a <strong>real-time Pong game</strong> with <em>React, Fastify, WebSockets</em>. 
+        Features: secure JWT/OAuth login, 2FA, matchmaking, AI opponent, PostgreSQL storage.</p>
+      </article>
+      <article class="bg-white p-6 shadow rounded-lg">
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">HTTP Server in C++98</h3>
+        <p class="text-gray-700">Implemented a custom <strong>HTTP/1.1 server</strong> supporting concurrency, file serving, CGI execution, and sessions.</p>
+      </article>
+      <article class="bg-white p-6 shadow rounded-lg">
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Modular Infrastructure with Docker</h3>
+        <p class="text-gray-700">Designed <strong>Dockerized infrastructure</strong> with NGINX, MariaDB, and WordPress. Automated builds, secrets, and Redis caching.</p>
+      </article>
+      <article class="bg-white p-6 shadow rounded-lg">
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Django Platforms</h3>
+        <p class="text-gray-700">Developed <strong>Django web apps</strong> for room booking and student networking with real-time chat, gamification, and PostgreSQL optimization.</p>
+      </article>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 Ahmed Ghlimi – Software Engineering Student at 1337 School | Backend & Full-Stack Developer</p>
+  <!-- Contact -->
+
+  <section id="contact" class="bg-indigo-600 text-white py-16">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+      <p class="mb-4">Email: <a href="mailto:ahmedghlimi123@gmail.com" class="underline">ahmedghlimi123@gmail.com</a></p>
+      <p class="mb-4">Phone: <a href="tel:+212633676603" class="underline">+212 633 676 603</a></p>
+      <p>Connect on <a href="https://www.linkedin.com/" class="underline">LinkedIn</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+    <p>© 2025 Ahmed Ghlimi – Software Engineering Student at 1337 School | Full-Stack Developer</p>
   </footer>
+
 </body>
 </html>
